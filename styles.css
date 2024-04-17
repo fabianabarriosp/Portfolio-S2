@@ -162,6 +162,7 @@ section {
 
 
 /**SECTION - HOME**/
+
 .name{
   color:#6C5E57;
   font-family: "Lora", serif;
@@ -177,10 +178,20 @@ section {
   position: absolute;
   width:500px;
   height: auto;
-  margin-left:450px;
+  margin-left:200px;
   top:10%;
   z-index: -5;
   transform: translateX(-50%);
+  animation: swirl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Apply the swirl animation */
+}
+
+@keyframes swirl {
+  0% {
+    transform: scale(0) rotate(0deg); /* Initial position */
+  }
+  100% {
+    transform: scale(1) rotate(360deg); /* Expanded size and full rotation */
+  }
 }
 
 
@@ -199,14 +210,14 @@ section {
 
 .AMdogs{
   width:290px;
-  margin-left: 440px;
-  margin-top: -200px;
+  margin-left: 460px;
+  margin-top: -190px;
   position: absolute;
 }
 
 .Me{
   width:400px;
-  margin-left: 570px;
+  margin-left: 610px;
   margin-top: 5px;
   position: absolute;
 }
@@ -214,7 +225,7 @@ section {
 .AMfriends{
   width:220px;
   margin-left: 320px;
-  margin-top:120px;
+  margin-top:110px;
   position: absolute;
 }
 
@@ -222,7 +233,7 @@ section {
   width:290px;
   position: absolute;
   margin-left: -20px;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .AMcircle2{
@@ -250,12 +261,12 @@ section {
 /*title*/
 
 #LearningOutcomes{
-  margin-top: 580px;
+  margin-top: 500px;
 }
 h2{
   font-family: "Luckiest Guy", cursive;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 55px;
   margin-bottom: 60px;
   color: #6C5E57;
   text-align: center;
@@ -265,7 +276,7 @@ h2{
 /* Container to hold the cards */
 .cards-container {
   padding-bottom: 20px; 
-  margin-left: -160px;
+  margin-left: 320px;
 }
 
 /* Styling for cards */
@@ -273,31 +284,37 @@ h2{
   border-radius: 18px;
   padding: 30px;
   margin: 40px;
-  width: 370px; 
-  height: 260px; 
+  width: 360px; 
+  height: 130px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
-/* Background colors for each card */
+/*each card */
 .card:nth-child(1) {
   background-color: #685a52;
+  margin-left: -190px;
 }
 
 .card:nth-child(2) {
   background-color: #79685f;
+  height:140px;
+  margin-left: -30px;
 }
 
 .card:nth-child(3) {
   background-color: #90786d;
+  margin-left: 100px;
 }
 
 .card:nth-child(4) {
   background-color: #a68d82;
+  margin-left: -30px;
 }
 
 .card:nth-child(5) {
   background-color: #b2a098;
+  margin-left: -190px;
 }
 
 /**text in the cards**/
@@ -310,21 +327,9 @@ h2{
   cursor: default;
 }
 
-.card p {
-  font-family: "Lora", serif;
-  font-weight: 200;
-  font-size: 15px;
-  color: #efe7e4;
-  margin-top: 20px;
-  cursor: default;
-  width:320px;
-  line-height: 22px;
-  text-align: center;
-}
-
 .project-button {
   position: relative;
-  margin-top:30px;
+  margin-top:15px;
   margin-left:110px;
   background-color: transparent;
   border:1px solid #D2C9C5;
@@ -335,6 +340,11 @@ h2{
   cursor: pointer; 
   border-radius: 10px; 
 }
+
+/**specific style for card 2**/
+.card2 .project-button {
+    margin-top:7px;
+  }
 
 .project-button:hover {
   background-color: transparent;
@@ -367,6 +377,7 @@ transform: translate(-50%, -50%);
 padding: 20px;
 background-color: #6C5E57;
 border-radius: 10px;
+z-index: 99999999;
   }
 
 .close-btn {
@@ -562,7 +573,7 @@ border-radius: 10px;
   right: 50px;
   width:37%;
   color: #efe7e4;
-  top:1050px;
+  top:1055px;
   cursor:default;
   line-height: 20px;
   text-align: justify;
