@@ -17,26 +17,36 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectButtons = document.querySelectorAll('.project-button');
     const popupContainers = document.querySelectorAll('.popup-container');
 
-    // Add event listeners to each project button
-    projectButtons.forEach((button, index) => {
-        button.addEventListener('click', function() {
-            // Close all popups before opening the desired one
-            popupContainers.forEach(popupContainer => {
-                popupContainer.style.display = 'none';
-            });
+    // Function to open the specified popup container
+    function openPopup(index) {
+        // Close all popups before opening the desired one
+        popupContainers.forEach(popupContainer => {
+            popupContainer.style.display = 'none';
+        });
 
-            // Open the corresponding popup
-            const popupContainer = document.getElementById(`popup-container-${index + 1}`);
+        // Open the corresponding popup
+        const popupContainer = document.getElementById(`popup-container-${index}`);
+        if (popupContainer) {
             popupContainer.style.display = 'block';
 
             // Add event listener to close button in the popup
-            const closeButton = document.getElementById(`close-btn-${index + 1}`);
-            closeButton.addEventListener('click', function() {
-                popupContainer.style.display = 'none';
-            });
+            const closeButton = popupContainer.querySelector('.close-btn');
+            if (closeButton) {
+                closeButton.addEventListener('click', function() {
+                    popupContainer.style.display = 'none';
+                });
+            }
+        }
+    }
+
+    // Add event listeners to each project button
+    projectButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            openPopup(index + 1); // Index + 1 corresponds to popup-container ID
         });
     });
 });
+
 
 
   
@@ -46,24 +56,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   //image slideshow octocooked project Learning Outcome 1 popup
-  let slideIndex = 0;
-  const slides = document.querySelectorAll('.slider img');
-  
-  function showSlide(n) {
-    slideIndex = (n + slides.length) % slides.length;
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
-    slides[slideIndex].style.display = 'block';
-  }
-  
-  function prevSlide() {
-    showSlide(slideIndex - 1);
-  }
-  
-  function nextSlide() {
-    showSlide(slideIndex + 1);
-  }
-  
-  showSlide(slideIndex);
+
 

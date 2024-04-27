@@ -381,7 +381,7 @@ z-index: 99999999;
   }
 
 .close-btn {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
@@ -804,28 +804,34 @@ position: relative;
 
 /**FOOTER**/
 footer {
-  color: #ffa0a9;
-  padding: 20px;
   text-align: center;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/**Gmail link**/
-.contact-section{
-  line-height: 24px;
+  line-height: 28px;
+  background-color: #6C5E57;
+  position: relative;
+  padding: 60px;
 }
 
 .contact-section h2{
-  color: #ffc6cb;
-  font-size: 17px;
+  color: #d7c7c0;
+  font-size: 37px;
+  letter-spacing: 6px;
+  margin-top: -30px;
+  margin-left: 450px;
+  position: absolute;
+  cursor: default;
 }
 
 .contact-section a[href^="mailto"] {
-  color: #F35866;
+  color: #d7c7c0;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -105px;
 }
 
 /*phone number link */
 .contact-section a[href^="tel"] {
-  color: #FF7E89;
+  color: #d7c7c0;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -50px;
 }
