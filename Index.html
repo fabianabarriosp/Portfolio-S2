@@ -1,253 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js"></script> 
+    <link rel="stylesheet" href="styles.css">
 </head>
-  <body>
-
+<body>
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     
-      <!-- NAVIGATION -->
-      <nav>
-        <div class="navbar">
-          <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
-              <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div> 
-            <div class="menu-items">
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#AboutMe">About Me</a></li>
-              <li><a href="#LearningOutcomes">Learning Outcomes</a></li>
-            </div>
-          </div>
-        </div>
-      </nav>  
- 
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#learning">Learning Outcomes</a></li>
+        </ul>
+    </nav>
+
     <main>
-      <!-- HOME -->
-      <section id="Home">
-          <p class="name">Fabiana Barrios</p>
-          <img
-            src="./assets/PortfolioCover.png"
-            alt="circle image cover"
-            class="PortfolioCover"/>
-      </section>
-    
-      <!-- ABOUT ME -->
-      <section id="AboutMe">
-        <div class="aboutmecontainer">
-          <div><img src="./assets/about me/AM circle1.png" alt="circle 1" class="AMcircle1"></div>
-          <div><img src="./assets/about me/AM dogs.png" alt="dogs" class="AMdogs"></div>
-          <div><img src="./assets/about me/About.png" alt="About letters" class="About"></div>
-          <div><img src="./assets/about me/AM friends.png" alt="friends" class="AMfriends"></div>
-          <div><img src="./assets/about me/Me.png" alt="Me letters" class="Me"></div>
-          <div><img src="./assets/about me/AM circle2.png" alt="circle 2" class="AMcircle2"></div>
-          <div><img src="./assets/about me/AM circle3.png" alt="circle 3" class="AMcircle3"></div>
-          <div><img src="./assets/about me/AM 2pic.png" alt="sunset & concert" class="AM2pic"></div>
-        </div>
-      </section>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is the home section.</p>
+        </section>
 
-    
-      <!-- LEARNING OUTCOMES -->
-      <section id="LearningOutcomes">
-        <h2>Learning Outcomes</h2>
-      
-        <div class="cards-container">
-          <div class="card card1">
-            <h3>1 : Interactive Media Products</h3>
-            <button class="project-button">Projects</button>
-          </div>
-          <div class="card card2">
-            <h3>2 : Development & Version Control</h3>
-            <button class="project-button">Projects</button>
-          </div>
-          <div class="card card3">
-            <h3>3 : Iterative Design</h3>
-            <button class="project-button">Projects</button>
-          </div>
-          <div class="card card4">
-            <h3>4 : Professional Standard</h3>
-            <button class="project-button">Projects</button>
-          </div>
-          <div class="card card5">
-            <h3>5 : Personal Leadership</h3>
-            <button class="project-button">Projects</button>
-          </div>
-        </div>
-    
-        <!-- Popup containers -->
-        <!-- POPUP 1 -->
-        <div class="popup-container" id="popup-container-1">
-          <div class="popup" id="popup-1">
-            <span class="close-btn" id="close-btn-1">&times;</span>
-            <!-- re-branding project -->
-            <div class="VerticalTitle1">
-              <span>A</span><br>
-              <span>B</span><br>
-              <span>O</span><br>
-              <span>U</span><br>
-              <span>T</span><br><br>
-              <span>T</span><br>
-              <span>H</span><br>
-              <span>E</span><br>
-            </div>
-            <div class="VerticalTitle2">
-              <span>P</span><br>
-              <span>R</span><br>
-              <span>O</span><br>
-              <span>J</span><br>
-              <span>E</span><br>
-              <span>C</span><br>
-              <span>T</span><br>
-            </div>
-            <div class="project">
-              <div>
-                <h3 class="subtitle">Re-Branding</h3>
-                <p class="ProjectSummary">Our class was assigned a client we needed to re-brand. Nathalie is a Dutch Painter that sells commission art.  We divided ourselves in groups and created several different brand-guides, style-scapes and possible website layout designs to make our clients brand, Nathalie Silverentand, more modern and unique. Additionally, we also created a content strategy, focusing in platforms like Instagram, Facebook and Etsy as we had previously researched through interviews and surveys Nathalie s target audience and we wanted to cater her content to fit this specific public. After having several designs ready we would send them to our client so she could give us feedback on what she would like us to keep and what she did not enjoy. For our final design we decided to make use of elements Nathalie liked but that are also out of her brand “style” to offer a different insight to what she is used to.</p>
-              </div>
-            </div>
-            <!--images re-branding-->
-            <div class="image-container">
-              <img src="./assets/Re-Branding/NS Slapen kind.png" alt="Slapen Kind" class="SlapenKind">
-              <img src="./assets/Re-Branding/NS Eye.png" alt="Eye page" class="Eye">
-              <img src="./assets/Re-Branding/NS About me.png" alt="About me page" class="AboutMeNS">
-              <img src="./assets/Re-Branding/NS Contact me.png" alt="Contact me page" class="ContactMeNS">
-              <img src="./assets/Re-Branding/NS Citroenen.png" alt="Citroenen" class="Citroenen">
-            </div>
-             <!--tool images-->
-             <div><img src="./assets/Re-Branding/NS tools.png" alt="Tools used for the project" class="NStools"></div>
-            
-             <!--styled textbox-->
-             <div><p class="textbox">Using Figma features, we created a prototype for Nathalies website so that we could test it with the users and determine changes that needed to be done.</p></div>
-            
-             <div><img src="./assets/Re-Branding/NS figma.png" alt="Nathalie Silverentand Figma prototype" class="NSFigma"></div>
-            
-            <div class="ReflectionTitle">REFLECTION</div>
-            <div class="ReflectionText1">
-              <p>As we worked in groups, we started by ensuring that we understood the basics of technology, media, and design. This meant keeping up with the latest trends and tools available to us. We did this by checking daily sites like Awwwards, Dribble, and Squarespace to see other people's work and get some inspiration.</p><br>
-              <p>Working in groups was key to our success. It allowed us to combine our different skills and perspectives effectively. Each member of the team made an initial brand guide/stylescape to what they thought would best fit our client, Nathalie Silverentand. Getting feedback was crucial throughout the process. We regularly tested our ideas with both users and our client, this helped us make sure that our designs were aligned with Nathalie's vision for her brand.</p>
-            </div>
-            <div class="ReflectionText2">
-              <p>Our content strategy was informed by what we learned about Nathalie's target audience. By understanding their preferences and behaviors, we were able to tailor our approach to platforms like Instagram, Facebook, and Etsy. This ensured that our content would resonate with the people Nathalie wanted to reach.</p><br>
-              <p>In the end, this project taught us a lot about creating digital products that are both user-friendly and in line with the client's goals. As well as considering delivering a product that may not be what the client expected as looking at other peoples perspectives can offer insight to the brands future approach.</p>
-            </div>
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>This is the about me section.</p>
+        </section>
 
-            <!--Nathalies website video -->
-            <div><video controls>
-                <source src="./assets/Re-Branding/NS website.mp4" type="video/mp4" class="video">
-            </video>
-            </div>
-            
-            <div class="DocumentationTitle">DOCUMENTATION</div>
-            
-            <div class="button-container"> 
-            <!-- Button to open Figma link -->
-              <button class="documentationBUTTON" onclick="openFigma()">Figma</button>
-            <!-- Button to open Content Strategy pdf -->
-              <a href="./assets/Re-Branding/Content Strategy Nathalie Silverentand.pdf" target="_blank">
-                <button class="documentationBUTTON">Content Strategy</button>
-              </a>
-            <!-- Button to open Team Charter pdf -->
-            <a href="./assets/Re-Branding/Team Charter + Interview Transcripts Nathalie Silverentand.pdf" target="_blank">
-              <button class="documentationBUTTON">Team Charter</button>
-            </a>
-            <!-- Button to open Project Plan pdf -->
-            <a href="./assets/Re-Branding/PROJECT PLAN - GROUP 5.pdf" target="_blank">
-              <button class="documentationBUTTON">Project Plan</button>
-            </a>
-            </div>
-
-            <div><h3 class="sidenote">FINAL BRAND-GUIDE & STYLESCAPE FOR THE PROJECT</h3></div>
-            <div><img src="./assets/Re-Branding/NS Brandguide.png" alt="Brandguide" class="Brandguide"></div>
-            <div><img src="./assets/Re-Branding/NS Stylescape.png" alt="Stylescape" class="Stylescape"></div>
+        <!-- Learning Outcomes Section -->
+        <section id="learning" class="section">
+            <h2>Learning Outcomes</h2>
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>1 : Interactive Media Products</h3>
+                    <button class="project-button" onclick="openPopup('popup1')">Projects</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>2 : Development & Version Control</h3>
+                    <button class="project-button" onclick="openPopup('popup2')">Projects</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                  <h3>3 : Iterative Design</h3>
+                  <button class="project-button" onclick="openPopup('popup3')">Projects</button>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                  <h3>4 : Professional Standard</h3>
+                  <button class="project-button" onclick="openPopup('popup4')">Projects</button>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                  <h3>5 : Personal Leadership</h3>
+                  <button class="project-button" onclick="openPopup('popup5')">Projects</button>
+                </div>
           
-          <!-- Octo-cooked project -->
-          <div class="GradientCircles">
-            <div class="darkcircle"></div>
-            <div class="mediumcircle"></div>
-            <div class="lightcircle"></div>
-          </div>
-          <div class="OctoCookedTitle">Octo-Cooked</div>
-          <div class="OctoCooked-container">
-          <div class="OctoCookedText1">
-            <p>The aim of this small project was to invent a multiplayer game that required players to engage simultaneously, promoting teamwork and communication. Inspired by the octopus's many arms, the game concept involved players collaborating to "cook" a meal, with each player responsible for a specific task.</p>
-          </div>
-          <div><img src="./assets/Octo-cooked/octocooked logo.png" alt="OctocookedLogo" class="OctoCookedLogo"></div>
-          <div class="OctoCookedText2">
-            <p>We applied appropriate design principles to create an interactive paper prototype to experience the collaboration and engagement among players, providing a valuable learning experience for everyone involved. We later conducted user-testing with our classmates and perfected any issues regarding the game.</p>
-          </div>
-          </div>
+                <!-- POPUP 1 -->
+                <div class="popup" id="popup1">
+                    <button class="close-btn" onclick="closePopup('popup1')">X</button>
+                  <!-- re-branding project -->
+                  <div class="VerticalTitle1">
+                    <span>A</span><br>
+                    <span>B</span><br>
+                    <span>O</span><br>
+                    <span>U</span><br>
+                    <span>T</span><br><br>
+                    <span>T</span><br>
+                    <span>H</span><br>
+                    <span>E</span><br>
+                  </div>
+                  <div class="VerticalTitle2">
+                    <span>P</span><br>
+                    <span>R</span><br>
+                    <span>O</span><br>
+                    <span>J</span><br>
+                    <span>E</span><br>
+                    <span>C</span><br>
+                    <span>T</span><br>
+                  </div>
+                  <div class="project">
+                    <div>
+                      <h3 class="subtitle">Re-Branding</h3>
+                      <p class="ProjectSummary">Our class was assigned a client we needed to re-brand. Nathalie is a Dutch Painter that sells commission art.  We divided ourselves in groups and created several different brand-guides, style-scapes and possible website layout designs to make our clients brand, Nathalie Silverentand, more modern and unique. Additionally, we also created a content strategy, focusing in platforms like Instagram, Facebook and Etsy as we had previously researched through interviews and surveys Nathalie s target audience and we wanted to cater her content to fit this specific public. After having several designs ready we would send them to our client so she could give us feedback on what she would like us to keep and what she did not enjoy. For our final design we decided to make use of elements Nathalie liked but that are also out of her brand “style” to offer a different insight to what she is used to.</p>
+                    </div>
+                  </div>
+                  <!--images re-branding-->
+                  <div class="image-container">
+                    <img src="./assets/Re-Branding/NS Slapen kind.png" alt="Slapen Kind" class="SlapenKind">
+                    <img src="./assets/Re-Branding/NS Eye.png" alt="Eye page" class="Eye">
+                    <img src="./assets/Re-Branding/NS Contact me.png" alt="Contact me page" class="ContactMeNS">
+                    <img src="./assets/Re-Branding/NS Citroenen.png" alt="Citroenen" class="Citroenen">
+                    <img src="./assets/Re-Branding/NS About me.png" alt="About me page" class="AboutMeNS">
+                  </div>
+                  <!--tool images-->
+                  <div><img src="./assets/Re-Branding/NS tools.png" alt="Tools used for the project" class="NStools"></div>
 
-        <!--Image slideshow
-        <div class="slider-container">
-          <div class="slider">
-            <img src="./assets/Octo-cooked/Octocooked1.png" alt="Process pictures of prototyping">
-            <img src="./assets/Octo-cooked/Octocooked2.png" alt="Process pictures of prototyping">
-            <img src="./assets/Octo-cooked/Octocooked3.png" alt="Process pictures of prototyping">
-            <img src="./assets/Octo-cooked/Octocooked4.png" alt="Process pictures of prototyping">
-            <img src="./assets/Octo-cooked/Octocooked5.png" alt="Process pictures of prototyping">
+                  <!--styled textbox-->
+                  <div><p class="textbox">Using Figma features, we created a prototype for Nathalies website so that we could test it with the users and determine changes that needed to be done.</p></div>
 
-          </div>
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-        <div class="OctoCookedText3">
-          <p>These pictures show the process undertaken for the prototyping stage of this project.</p>
-        </div>-->
-        
-          
-       
+                  <div><img src="./assets/Re-Branding/NS figma.png" alt="Nathalie Silverentand Figma prototype" class="NSFigma"></div>
+
+                  <div class="ReflectionTitle">REFLECTION</div>
+                  <div class="ReflectionText1">
+                    <p>As we worked in groups, we started by ensuring that we understood the basics of technology, media, and design. This meant keeping up with the latest trends and tools available to us. We did this by checking daily sites like Awwwards, Dribble, and Squarespace to see other people's work and get some inspiration.</p><br>
+                    <p>Working in groups was key to our success. It allowed us to combine our different skills and perspectives effectively. Each member of the team made an initial brand guide/stylescape to what they thought would best fit our client, Nathalie Silverentand. Getting feedback was crucial throughout the process. We regularly tested our ideas with both users and our client, this helped us make sure that our designs were aligned with Nathalie's vision for her brand.</p>
+                  </div>
+                  <div class="ReflectionText2">
+                    <p>Our content strategy was informed by what we learned about Nathalie's target audience. By understanding their preferences and behaviors, we were able to tailor our approach to platforms like Instagram, Facebook, and Etsy. This ensured that our content would resonate with the people Nathalie wanted to reach.</p><br>
+                    <p>In the end, this project taught us a lot about creating digital products that are both user-friendly and in line with the client's goals. As well as considering delivering a product that may not be what the client expected as looking at other peoples perspectives can offer insight to the brands future approach.</p>
+                  </div>
+                  <!--Nathalies website video -->
+                  <div><video controls>
+                      <source src="./assets/Re-Branding/NS website.mp4" type="video/mp4" class="video">
+                  </video>
+                  </div>
+                  <div class="DocumentationTitle">DOCUMENTATION</div>
+                  
+                  <div class="button-container">
+                  <!-- Button to open Figma link -->
+                    <button class="documentationBUTTON" onclick="openFigma()">Figma</button>
+                  <!-- Button to open Content Strategy pdf -->
+                    <a href="./assets/Re-Branding/Content Strategy Nathalie Silverentand.pdf" target="_blank">
+                      <button class="documentationBUTTON">Content Strategy</button>
+                    </a>
+                  <!-- Button to open Team Charter pdf -->
+                  <a href="./assets/Re-Branding/Team Charter + Interview Transcripts Nathalie Silverentand.pdf" target="_blank">
+                    <button class="documentationBUTTON">Team Charter</button>
+                  </a>
+                  <!-- Button to open Project Plan pdf -->
+                  <a href="./assets/Re-Branding/PROJECT PLAN - GROUP 5.pdf" target="_blank">
+                    <button class="documentationBUTTON">Project Plan</button>
+                  </a>
+                  </div>
 
 
-    <!-- POPUP 2 -->
-    <div class="popup-container" id="popup-container-2">
-        <div class="popup" id="popup-2">
-            <span class="close-btn" id="close-btn-2">&times;</span>
-            <p>Popup 2 Description.</p>
-        </div>
-    </div>
-    <!-- POPUP 3 -->
-    <div class="popup-container" id="popup-container-3">
-        <div class="popup" id="popup-3">
-            <span class="close-btn" id="close-btn-3">&times;</span>
-            <h4>Popup 3 Title</h4>
-            <p>Popup 3 Description.</p>
-        </div>
-    </div>
-    <!-- POPUP 4 -->
-    <div class="popup-container" id="popup-container-4">
-        <div class="popup" id="popup-4">
-            <span class="close-btn" id="close-btn-4">&times;</span>
-            <h4>Popup 4 Title</h4>
-            <p>Popup 4 Description.</p>
-        </div>
-    </div>
-    <!-- POPUP 5 -->
-    <div class="popup-container" id="popup-container-5">
-        <div class="popup" id="popup-5">
-            <span class="close-btn" id="close-btn-5">&times;</span>
-            <h4>Popup 5 Title</h4>
-            <p>Popup 5 Description.</p>
-        </div>
-    </div>
-    </section>
-    
-  </main>
+                  <div><h3 class="sidenote">FINAL BRAND-GUIDE & STYLESCAPE FOR THE PROJECT</h3></div>
+                  <div><img src="./assets/Re-Branding/NS Brandguide.png" alt="Brandguide" class="Brandguide"></div>
+                  <div><img src="./assets/Re-Branding/NS Stylescape.png" alt="Stylescape" class="Stylescape"></div>
 
-    <!------------- CONTACT ME FOOTER -------------->
-     <footer>
-      <div class="contact-section">
-        <h2>CONTACT ME!</h2>
-        <a href="tel:+31 617451037">+31 617 451 037</a><br>
-          <a href="mailto:fabianabarriosp@email.com"
-            >fabianabarriosp@gmail.com</a>
-      </div>
+                  <!-- Octo-cooked project -->
+                  <div class="GradientCircles1">
+                  <div class="darkcircle1"></div>
+                  <div class="mediumcircle1"></div>
+                  <div class="lightcircle1"></div>
+                  </div>
+                  <div class="OctoCookedTitle">Octo-Cooked</div>
+                  <div class="OctoCooked-container">
+                  <div class="OctoCookedText1">
+                  <p>The aim of this small project was to invent a multiplayer game that required players to engage simultaneously, promoting teamwork and communication. Inspired by the octopus's many arms, the game concept involved players collaborating to "cook" a meal, with each player responsible for a specific task.</p>
+                  </div>
+                  <div><img src="./assets/Octo-cooked/octocooked logo.png" alt="OctocookedLogo" class="OctoCookedLogo"></div>
+                  <div class="OctoCookedText2">
+                  <p>We applied appropriate design principles to create an interactive paper prototype to experience the collaboration and engagement among players, providing a valuable learning experience for everyone involved. We later conducted user-testing with our classmates and perfected any issues regarding the game.</p>
+                  </div>
+                  </div>
+
+
+                  <!--Image slideshow-->
+                  <div class="slider-container">
+                  <div class="slider">
+                  <img src="./assets/Octo-cooked/Octocooked1.png" alt="Process pictures of prototyping">
+                  <img src="./assets/Octo-cooked/Octocooked2.png" alt="Process pictures of prototyping">
+                  <img src="./assets/Octo-cooked/Octocooked3.png" alt="Process pictures of prototyping">
+                  <img src="./assets/Octo-cooked/Octocooked4.png" alt="Process pictures of prototyping">
+                  <img src="./assets/Octo-cooked/Octocooked5.png" alt="Process pictures of prototyping">
+
+
+                  </div>
+                  <button class="prev" onclick="prevSlide()">&#10094;</button>
+                  <button class="next" onclick="nextSlide()">&#10095;</button>
+                  </div>
+                  <div class="OctoCookedText3">
+                  <p>These pictures show the process undertaken for the prototyping stage of this project.</p>
+                  </div>
+
+                </div>
+                <!-- POPUP 2 -->
+                <div class="popup" id="popup2">
+                  <button class="close-btn" onclick="closePopup('popup2')">X</button>
+                  <h4>Projects for Development & Version Control</h4>
+                  <p>Details of projects related to Development & Version Control.</p>
+                </div>
+                <!-- POPUP 3 -->
+                <div class="popup" id="popup3">
+                  <button class="close-btn" onclick="closePopup('popup3')">X</button>
+                  <h4>Projects for Development & Version Control</h4>
+                  <p>Details of projects related to Development & Version Control.</p>
+                </div>
+                <!-- POPUP 4 -->
+                <div class="popup" id="popup4">
+                  <button class="close-btn" onclick="closePopup('popup4')">X</button>
+                  <h4>Projects for Development & Version Control</h4>
+                  <p>Details of projects related to Development & Version Control.</p>
+                </div>
+                <!-- POPUP 5 -->
+                <div class="popup" id="popup5">
+                  <button class="close-btn" onclick="closePopup('popup5')">X</button>
+                  <h4>Projects for Development & Version Control</h4>
+                  <p>Details of projects related to Development & Version Control.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Me</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
