@@ -45,12 +45,151 @@ body, html {
 
 /* Sections */
 .section {
-  padding: 50px;
+  padding:30px;
   text-align: center;
 }
 
-/*LEARNING OUTCOMES SECTION*/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6C5E57;
+    z-index: 1000;
+  }
 
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    padding: 15px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 400px; /* Adjust max width for smaller screens */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*HOME SECTION*/
+.name{
+  color:#6C5E57;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 88px;
+  margin-top:-90px;
+  margin-left:230px;
+  position: absolute;
+  z-index: 0;
+  letter-spacing: 6px;
+}
+
+.PortfolioCover {
+  position: absolute;
+  width:450px;
+  height: auto;
+  margin-left:500px;
+  margin-top:-390px;
+  z-index: -5;
+  transform: translateX(-50%);
+  animation: swirl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Apply the swirl animation */
+}
+
+@keyframes swirl {
+  0% {
+    transform: scale(0) rotate(0deg); /* Initial position */
+  }
+  100% {
+    transform: scale(1) rotate(360deg); /* Expanded size and full rotation */
+  }
+}
+
+/*ABOUT ME SECTION*/
+.aboutmecontainer{
+  position:relative;
+  margin-left: -830px;
+  margin-top: 50px;
+}
+
+.About{
+  width:750px;
+  margin-top: -330px;
+  margin-left: -190px;
+  position: absolute;
+}
+
+.AMdogs{
+  width:290px;
+  margin-left: 460px;
+  margin-top: -190px;
+  position: absolute;
+}
+
+.Me{
+  width:400px;
+  margin-left: 610px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.AMfriends{
+  width:220px;
+  margin-left: 320px;
+  margin-top:110px;
+  position: absolute;
+}
+
+.AMcircle1{
+  width:290px;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 110px;
+}
+
+.AMcircle2{
+  width:390px;
+  position: absolute;
+  margin-left: 220px;
+  margin-top:280px;
+}
+
+.AMcircle3{
+  width: 260px;
+  position: absolute;
+  margin-left: 610px;
+  margin-top:530px;
+}
+
+.AM2pic{
+  width: 380px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top:420px;
+}
+
+/*LEARNING OUTCOMES SECTION*/
 .section h2{
   font-family: "Luckiest Guy", cursive;
   font-weight: bold;
@@ -59,7 +198,6 @@ body, html {
   color: #6C5E57;
   text-align: center;
   letter-spacing: 3px;
-  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .cards-container {
@@ -129,7 +267,7 @@ body, html {
   display: none;
   position: fixed;
   width: 900px;
-  max-height: 100%;
+  max-height: 1000px;
   top: 2%;
   left: 13%;
   background-color: #6C5E57;
@@ -336,13 +474,17 @@ body, html {
   text-align: justify;
 }
 
-video{
+.video-container {
   position: relative;
-  width:420px;
+  width: 82%; 
+}
+
+.video1 {
+  width: 60%; /* Ensure the video fills its container */
   height: auto;
-  margin-top:670px;
-  margin-left:-390px;
   border-radius: 10px;
+  margin-top: 665px; 
+  margin-left: -220px;
 }
 
 .DocumentationTitle{
@@ -555,13 +697,306 @@ video{
   letter-spacing: 1px;
 }
 
-
-/* Footer */
-footer {
-  padding: 20px;
+/**LEARNING OUTCOME 2 popup contents**/
+.PortfolioTitle{
+  margin-left:540px;
+  margin-top:50px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  font-size: 38px;
+  color: #D2C9C5;
   text-align: center;
+  letter-spacing: 13px;
+}
+
+.PortfolioCoverPOPUP{
+width:260px;
+margin-top: -155px;
+margin-left: -120px;
+}
+
+.introTEXTpopup2{
+width:22%;
+text-align: justify;
+font-family: "Lora", serif;
+font-weight: 200;
+font-size: 13px;
+color: #efe7e4;
+cursor:default;
+line-height: 20px;
+margin-top: -190px;
+margin-left: 20px;
+}
+
+.portfolioTEXT{
+font-family: "Londrina Solid", sans-serif;
+font-weight: 500;
+font-size: 16px;
+margin-left: 275px;
+margin-top:-200px;
+width:65%;
+color: #fcf6f6;
+cursor:default;
+line-height: 25px;
+text-align: center;
+z-index: 200;
+background-color: #E5AD6C;
+border-radius: 20px;
+padding:10px;
+letter-spacing: 1px;
+}
+
+/**pokemon workshop 1**/
+.GradientCircles2 {
+position: relative;
+z-index: 2090388247;
+margin-top: -300px;
+margin-left: -20px;
+}
+
+.darkcircle2 {
+background-color: #90786D;
+height: 1120px;
+width: 1120px;
+border-radius: 50%;
+position: absolute;
+top: 355px;
+left: -100px;
+}
+
+.mediumcircle2 {
+background-color: #B2A098;
+height: 1050px;
+width: 1050px;
+border-radius: 50%;
+position: absolute;
+top: 390px;
+left: -65px;
+}
+
+.lightcircle2 {
+background-color: #D2C9C5;
+height: 980px;
+width: 980px;
+border-radius: 50%;
+position: absolute;
+top: 425px;
+left: -30px;
+}
+
+.PokemonTitle{
+  margin-left:280px;
+  margin-top:470px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  font-size: 38px;
+  color: #6C5E57;
+  letter-spacing: 13px;
+  z-index: 100000;
+  position: absolute;
+}
+
+/**LEARNING OUTCOME 3 popup contents**/
+.button-container2{
+  display: flex;
+  flex-direction: column;
+  z-index: 32873887827;
+  position: relative;
+}
+
+.figmaBUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  margin-top: 2480px;
+  position: absolute;
+}
+
+.figmaBUTTON:hover{
+  background-color: #a8948b;
+ }
+
+ .documentationBUTTON2{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 3530px;
+  margin-left: -420px;
+  position: absolute;
+}
+
+.documentationBUTTON2:hover{
+  background-color: #a8948b;
+ }
+
+ .documentationBUTTON3{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 3600px;
+  margin-left: -420px;
+  position: absolute;
+}
+
+.documentationBUTTON3:hover{
+  background-color: #a8948b;
+ }
+
+ .LO3{
+  position: relative;
+  width: 940px;
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-bottom: 420px;
   background-color: #6C5E57;
-  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: -1083784730;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/**LEARNING OUTCOME 4 popup contents**/
+.ContentStrategyBUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:9px 25px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 430px;
+  margin-left: -440px;
+  position: absolute;
+}
+
+.ContentStrategyBUTTON:hover{
+  background-color: #a8948b;
+ }
+
+ .CANVABUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 1140px;
+  margin-left: 180px;
+  position: absolute;
+}
+
+.CANVABUTTON:hover{
+  background-color: #a8948b;
+ }
+
+.LO4{
+  position: relative;
+  width: 940px;
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-bottom: 400px;
+  background-color: #6C5E57;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: -1083784730;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.trello{
+  position: absolute;
+  margin-top:20px;
+  margin-left:-60px;
+  width: 450px;
+  z-index: 2837374477;
+  border-radius: 20px;
+}
+.video2 {
+  width: 65%; /* Ensure the video fills its container */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 820px; 
+  left: 20px;
+  z-index: 737282929383;
+  position: absolute;
+}
+
+/**LEARNING OUTCOME 5 popup contents**/
+/**FOOTER**/
+footer {
+text-align: center;
+line-height: 28px;
+background-color: #6C5E57;
+position: relative;
+padding: 60px;
+}
+
+.contact-section h2{
+color: #d7c7c0;
+font-size: 37px;
+letter-spacing: 6px;
+margin-top: -30px;
+margin-left: 450px;
+position: absolute;
+cursor: default;
+font-family: "Luckiest Guy", cursive;
+}
+
+.contact-section a[href^="mailto"] {
+color: #d7c7c0;
+position: absolute;
+margin-top: 20px;
+margin-left: -105px;
+font-family: "Nokora", sans-serif;
+font-weight: bold;
+}
+
+/*phone number link */
+.contact-section a[href^="tel"] {
+color: #d7c7c0;
+position: absolute;
+margin-top: 10px;
+margin-left: -50px;
+font-family: "Nokora", sans-serif;
+font-weight: bold;
 }
 
 /* Media Queries */

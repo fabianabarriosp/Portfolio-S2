@@ -39,3 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('open');
     });
 });
+
+
+  function openFigma() {
+    // Specify the Figma URL you want to open
+    var figmaUrl = 'https://www.figma.com/file/7tIkzUMv8cd3fhybrX4H2Z/nathalie?type=design&node-id=0-1&mode=design&t=6Wpw6TDyQJXyxE0j-0';
+  
+    // Open the Figma URL in a new tab
+    window.open(figmaUrl, "_blank");
+  }
+  

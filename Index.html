@@ -26,14 +26,25 @@
     <main>
         <!-- Home Section -->
         <section id="home" class="section">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home section.</p>
+          <p class="name">Fabiana <br>Barrios</p>
+          <img
+            src="./assets/PortfolioCover.png"
+            alt="circle image cover"
+            class="PortfolioCover"/>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Me Section 
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>This is the about me section.</p>
+          <div class="aboutmecontainer">
+            <div><img src="./assets/about me/AM circle1.png" alt="circle 1" class="AMcircle1"></div>
+            <div><img src="./assets/about me/AM dogs.png" alt="dogs" class="AMdogs"></div>
+            <div><img src="./assets/about me/About.png" alt="About letters" class="About"></div>
+            <div><img src="./assets/about me/AM friends.png" alt="friends" class="AMfriends"></div>
+            <div><img src="./assets/about me/Me.png" alt="Me letters" class="Me"></div>
+            <div><img src="./assets/about me/AM circle2.png" alt="circle 2" class="AMcircle2"></div>
+            <div><img src="./assets/about me/AM circle3.png" alt="circle 3" class="AMcircle3"></div>
+            <div><img src="./assets/about me/AM 2pic.png" alt="sunset & concert" class="AM2pic"></div>
+          </div>
         </section>
 
         <!-- Learning Outcomes Section -->
@@ -121,12 +132,15 @@
                     <p>In the end, this project taught us a lot about creating digital products that are both user-friendly and in line with the client's goals. As well as considering delivering a product that may not be what the client expected as looking at other peoples perspectives can offer insight to the brands future approach.</p>
                   </div>
                   <!--Nathalies website video -->
-                  <div><video controls>
-                      <source src="./assets/Re-Branding/NS website.mp4" type="video/mp4" class="video">
-                  </video>
-                  </div>
+                  <div class="video-container">
+                    <video controls class="video1">
+                        <source src="./assets/Re-Branding/NS website.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
                   <div class="DocumentationTitle">DOCUMENTATION</div>
-                  
+
                   <div class="button-container">
                   <!-- Button to open Figma link -->
                     <button class="documentationBUTTON" onclick="openFigma()">Figma</button>
@@ -143,7 +157,6 @@
                     <button class="documentationBUTTON">Project Plan</button>
                   </a>
                   </div>
-
 
                   <div><h3 class="sidenote">FINAL BRAND-GUIDE & STYLESCAPE FOR THE PROJECT</h3></div>
                   <div><img src="./assets/Re-Branding/NS Brandguide.png" alt="Brandguide" class="Brandguide"></div>
@@ -166,7 +179,6 @@
                   </div>
                   </div>
 
-
                   <!--Image slideshow-->
                   <div class="slider-container">
                   <div class="slider">
@@ -175,7 +187,6 @@
                   <img src="./assets/Octo-cooked/Octocooked3.png" alt="Process pictures of prototyping">
                   <img src="./assets/Octo-cooked/Octocooked4.png" alt="Process pictures of prototyping">
                   <img src="./assets/Octo-cooked/Octocooked5.png" alt="Process pictures of prototyping">
-
 
                   </div>
                   <button class="prev" onclick="prevSlide()">&#10094;</button>
@@ -189,26 +200,69 @@
                 <!-- POPUP 2 -->
                 <div class="popup" id="popup2">
                   <button class="close-btn" onclick="closePopup('popup2')">X</button>
-                  <h4>Projects for Development & Version Control</h4>
-                  <p>Details of projects related to Development & Version Control.</p>
+                  <!--Portfolio-->
+                  <div class="PortfolioTitle">ABOUT<br>THE <br>PORTFOLIO</div>
+                  <div><img src="./assets/portfolio cover POPUP.png" alt="Portfolio cover screenshot" class="PortfolioCoverPOPUP"></div>
+                  <div class="introTEXTpopup2">
+                    <p>As part of my Media Design studies, I created a portfolio to showcase my projects and reflect on what I've learned.  I had to think about layout, colors, and how to make it eye-catchy with the elements i chose. The purpose of this portfolio is not just about showing off my work; it is also a chance to reflect on what I've learned along the way. I talk about the challenges I faced, the techniques I used, and what I took away from each project. It is a visual way of tying everything I have worked on during the semester and see how much I've grown as a media designer.</p>
+                  </div>
+                  <div class="portfolioTEXT">
+                    <p>This project let me dive into front-end development languages, writing code and documenting using version control. I used Figma to create a prototype and have an idea of my design and later used HTML, CSS, and possibly JavaScript to create the website. This was a great opportunity to sharpen my skills in these areas, laying a strong foundation for future web development projects.</p>
+                  </div>
+                  <!--Pokemon Wokshop 1-->
+                  <div class="GradientCircles2">
+                    <div class="darkcircle2"></div>
+                    <div class="mediumcircle2"></div>
+                    <div class="lightcircle2"></div>
+                  <div class="PokemonTitle">POKEMON<br> WORKSHOP 1</div>
+                  <div class="OctoCookedText2">
+                    <p>I attended a CSS workshop and the task we were presented was to choose a random Pokemon character and recreate it using css tips and techniques we had learned/revised in the class but with a twist, using only squares. We had 30 minutes to complete the task and then show the final result to the class.</p>
+                    </div>
+                </div>
+                </div>
                 </div>
                 <!-- POPUP 3 -->
                 <div class="popup" id="popup3">
                   <button class="close-btn" onclick="closePopup('popup3')">X</button>
-                  <h4>Projects for Development & Version Control</h4>
-                  <p>Details of projects related to Development & Version Control.</p>
+                  <div class="button-container2">
+                    <!-- Button to open Figma link -->
+                      <button class="figmaBUTTON" onclick="openFigma()">Figma</button>
+                    <!-- Button to open Team Charter pdf -->
+                    <a href="./assets/Explore Breda/Team Charter-EB.pdf" target="_blank">
+                      <button class="documentationBUTTON2">Team Charter</button>
+                    </a>
+                    <!-- Button to open Project Plan pdf -->
+                    <a href="./assets/Explore Breda/PROJECT PLAN-EB.pdf" target="_blank">
+                      <button class="documentationBUTTON3">Project Plan</button>
+                    </a>
+                    </div>
+                    <div><img src="./assets/LO3.png" alt="overall page" class="LO3"></div>
                 </div>
                 <!-- POPUP 4 -->
                 <div class="popup" id="popup4">
                   <button class="close-btn" onclick="closePopup('popup4')">X</button>
-                  <h4>Projects for Development & Version Control</h4>
-                  <p>Details of projects related to Development & Version Control.</p>
+                  <div><img src="./assets/Explore Breda/EB trello.png" alt="trello board" class="trello"></div> 
+                    <!-- Button to open Content Strategy pdf -->
+                    <a href="./assets/Re-Branding/Content Strategy Nathalie Silverentand.pdf" target="_blank">
+                      <button class="ContentStrategyBUTTON">Content Strategy</button>
+                    </a>
+                    <!-- Button to open CANVA presentation pdf -->
+                    <a href="./assets/Explore Breda/CANVApresentationEB.pdf" target="_blank">
+                      <button class="CANVABUTTON">CANVA presentation</button>
+                    </a>
+                    <!--Explore Breda video -->
+                    <div class="video-container">
+                      <video controls class="video2">
+                          <source src="./assets/Explore Breda/ExploreBredaAD.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div><img src="./assets/LO4.png" alt="overall page" class="LO4"></div>
                 </div>
                 <!-- POPUP 5 -->
                 <div class="popup" id="popup5">
                   <button class="close-btn" onclick="closePopup('popup5')">X</button>
-                  <h4>Projects for Development & Version Control</h4>
-                  <p>Details of projects related to Development & Version Control.</p>
+
                 </div>
             </div>
         </section>
@@ -216,11 +270,12 @@
 
     <!-- Footer -->
     <footer>
-        <div class="contact-info">
-            <h3>Contact Me</h3>
-            <p>Email: example@example.com</p>
-            <p>Phone: 123-456-7890</p>
-        </div>
+      <div class="contact-section">
+        <h2>CONTACT ME!</h2>
+        <a href="tel:+31 617451037">+31 617 451 037</a><br>
+          <a href="mailto:fabianabarriosp@email.com"
+            >fabianabarriosp@gmail.com</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
