@@ -6,22 +6,25 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Hamburger Menu -->
-    <div class="menu-toggle" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    
+<body>    
     <!-- Navigation Menu -->
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#learning">Learning Outcomes</a></li>
-        </ul>
-    </nav>
+      <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            <div class="menu-items">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#learning">Learning Outcomes</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>  
 
     <main>
         <!-- Home Section -->
@@ -33,7 +36,7 @@
             class="PortfolioCover"/>
         </section>
 
-        <!-- About Me Section 
+        <!-- About Me Section-->
         <section id="about" class="section">
           <div class="aboutmecontainer">
             <div><img src="./assets/about me/AM circle1.png" alt="circle 1" class="AMcircle1"></div>
@@ -249,6 +252,10 @@
                     <!-- Button to open CANVA presentation pdf -->
                     <a href="./assets/Explore Breda/CANVApresentationEB.pdf" target="_blank">
                       <button class="CANVABUTTON">CANVA presentation</button>
+                    </a>
+                    <!-- Button to open User Research pdf -->
+                    <a href="./assets/Explore Breda/User Research.pdf" target="_blank">
+                      <button class="UserResearchBUTTON">User Research</button>
                     </a>
                     <!--Explore Breda video -->
                     <div class="video-container">

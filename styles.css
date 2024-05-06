@@ -16,67 +16,139 @@ body, html {
 }
 
 /* Navigation and Hamburger Menu */
-.menu-toggle {
-  display: none;
+.container {
+  max-width: 1050px;
+  width: 60%;
+  margin: auto;
+}
+
+.navbar {
+  width: 45%;
+}
+
+.navbar .menu-items {
+  display: flex;
+  z-index: 6;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #fcf6f6;
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding: 0.7rem;
+  font-family: "Londrina Solid", sans-serif;
+}
+
+.navbar .nav-container a:hover{
+    text-decoration: underline 3px;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: fixed;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  opacity: 0;
   cursor: pointer;
 }
 
-.nav-menu {
+.nav-container .hamburger-lines {
+  height: 26px;
+  width: 32px;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
   display: flex;
-  justify-content: center;
-  background-color: #6C5E57;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.nav-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #6C5E57;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  position: fixed;
+  padding-top: 180px;
+  background-color: #E5AD6C;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-120%);
   display: flex;
+  align-items: center;
+  flex-direction:column;
+  transition: transform 0.6s ease-in-out;
+  text-align: center;
+  z-index: 10000;
 }
 
-.nav-menu li {
-  padding: 15px;
+.navbar .menu-items li {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
-.nav-menu a {
-  color: #fff;
-  text-decoration: none;
+/**change hamburger menu into x**/
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
 }
 
 /* Sections */
 .section {
-  padding:30px;
   text-align: center;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-  
-  .nav-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #6C5E57;
-    z-index: 1000;
-  }
-
-  .nav-menu.open {
-    display: flex;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-  }
-
-  .nav-menu li {
-    padding: 15px;
-  }
-
   .section {
     padding: 20px;
   }
@@ -95,12 +167,17 @@ body, html {
 }
 
 /*HOME SECTION*/
+#home{
+  padding-top: 270px;
+  padding-bottom: 250px;
+}
+
 .name{
   color:#6C5E57;
   font-family: "Luckiest Guy", cursive;
   font-size: 88px;
   margin-top:-90px;
-  margin-left:230px;
+  margin-left:170px;
   position: absolute;
   z-index: 0;
   letter-spacing: 6px;
@@ -110,9 +187,8 @@ body, html {
   position: absolute;
   width:450px;
   height: auto;
-  margin-left:500px;
-  margin-top:-390px;
-  z-index: -5;
+  margin-left:20px;
+  margin-top:-300px;
   transform: translateX(-50%);
   animation: swirl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Apply the swirl animation */
 }
@@ -127,6 +203,10 @@ body, html {
 }
 
 /*ABOUT ME SECTION*/
+#about{
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
 .aboutmecontainer{
   position:relative;
   margin-left: -830px;
@@ -183,13 +263,17 @@ body, html {
 }
 
 .AM2pic{
-  width: 380px;
+  width: 400px;
   position: absolute;
   margin-left: -50px;
   margin-top:420px;
 }
 
 /*LEARNING OUTCOMES SECTION*/
+#learning{
+  padding-top: 750px;
+  padding-bottom: 50px;
+}
 .section h2{
   font-family: "Luckiest Guy", cursive;
   font-weight: bold;
@@ -280,12 +364,13 @@ body, html {
 }
 
 .close-btn {
+  font-family: "Luckiest Guy", cursive;
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
   color:#D2C9C5;
-  font-size: 34px;
+  font-size: 39px;
   transition: 0.2s, top 0.2s;
   background-color: transparent;
   border: none; /* Reset border */
@@ -293,12 +378,11 @@ body, html {
 }
 
 .close-btn:hover {
-  font-size: 44px;
+  font-size: 46px;
   color: #E5AD6C;
 }
 
 /*POPUP 1*/
-/** vertical title**/
 .VerticalTitle1{
   margin-left:-870px;
   font-family: "Luckiest Guy", cursive;
@@ -324,7 +408,6 @@ body, html {
   cursor: default;
 }
 
-/**subtitle**/
 .subtitle{
   position: absolute;
   font-family: "Lora", serif;
@@ -338,7 +421,6 @@ body, html {
   width:30%;
 }
 
-/**Project Summary text**/
 .ProjectSummary{
   position: absolute;
   font-family: "Lora", serif;
@@ -687,6 +769,7 @@ body, html {
   width:40%;
   color: #fcf6f6;
   margin-top:35px;
+  margin-bottom: 500px;
   cursor:default;
   line-height: 30px;
   text-align: center;
@@ -924,6 +1007,28 @@ left: -30px;
 }
 
 .CANVABUTTON:hover{
+  background-color: #a8948b;
+ }
+
+ .UserResearchBUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 1237px;
+  margin-left: 180px;
+  position: absolute;
+}
+
+.UserResearchBUTTON:hover{
   background-color: #a8948b;
  }
 
