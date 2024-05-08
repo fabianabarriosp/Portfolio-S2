@@ -830,54 +830,43 @@ letter-spacing: 1px;
 }
 
 /**pokemon workshop 1**/
-.GradientCircles2 {
-position: relative;
-z-index: 2090388247;
-margin-top: -300px;
-margin-left: -20px;
-}
-
-.darkcircle2 {
-background-color: #90786D;
-height: 1120px;
-width: 1120px;
-border-radius: 50%;
-position: absolute;
-top: 355px;
-left: -100px;
-}
-
-.mediumcircle2 {
-background-color: #B2A098;
-height: 1050px;
-width: 1050px;
-border-radius: 50%;
-position: absolute;
-top: 390px;
-left: -65px;
-}
-
-.lightcircle2 {
-background-color: #D2C9C5;
-height: 980px;
-width: 980px;
-border-radius: 50%;
-position: absolute;
-top: 425px;
-left: -30px;
-}
-
-.PokemonTitle{
-  margin-left:280px;
-  margin-top:470px;
-  font-family: "Luckiest Guy", cursive;
-  font-weight: bold;
-  font-size: 38px;
-  color: #6C5E57;
-  letter-spacing: 13px;
-  z-index: 100000;
+.poliwhirl{
+  width: 820px;
+  margin-left: -420px;
+  margin-top: 315px;
+  z-index: 237827382;
   position: absolute;
 }
+.workshop1{
+  position: relative;
+  margin-left: -35px;
+  width:960px;
+  margin-bottom: 400px;
+  z-index: 8237723;
+}
+
+.zipBUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:220px;
+  cursor: pointer;
+  margin-top: 1070px;
+  margin-left: -90px;
+  position: absolute;
+  z-index: 28381738178;
+  white-space: nowrap;
+}
+
+.zipBUTTON:hover{
+  background-color: #a8948b;
+ }
 
 /**LEARNING OUTCOME 3 popup contents**/
 .button-container2{
@@ -886,6 +875,28 @@ left: -30px;
   z-index: 32873887827;
   position: relative;
 }
+
+.zipBUTTON2{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:160px;
+  cursor: pointer;
+  margin-top: 1635px;
+  margin-left: 270px;
+  position: absolute;
+  z-index: 28381738178;
+}
+
+.zipBUTTON2:hover{
+  background-color: #a8948b;
+ }
 
 .figmaBUTTON{
   font-family: "Londrina Solid", sans-serif;
