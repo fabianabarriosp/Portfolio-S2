@@ -815,8 +815,8 @@ margin-left: 20px;
 font-family: "Londrina Solid", sans-serif;
 font-weight: 500;
 font-size: 16px;
-margin-left: 275px;
-margin-top:-200px;
+margin-left: 265px;
+margin-top:-210px;
 width:65%;
 color: #fcf6f6;
 cursor:default;
@@ -833,13 +833,14 @@ letter-spacing: 1px;
 .poliwhirl{
   width: 820px;
   margin-left: -420px;
-  margin-top: 315px;
+  margin-top: 350px;
   z-index: 237827382;
   position: absolute;
 }
 .workshop1{
   position: relative;
   margin-left: -35px;
+  margin-top: 50px;
   width:960px;
   margin-bottom: 400px;
   z-index: 8237723;
@@ -857,7 +858,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:220px;
   cursor: pointer;
-  margin-top: 1070px;
+  margin-top: 1120px;
   margin-left: -90px;
   position: absolute;
   z-index: 28381738178;
@@ -1076,6 +1077,17 @@ letter-spacing: 1px;
 }
 
 /**LEARNING OUTCOME 5 popup contents**/
+/**flower on scroll**/
+#star-svg {
+  position: fixed;
+  bottom:0px;
+  left: 94px;
+  width: 120px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  rotate:13deg;
+  z-index: 84278787;
+}
 /**FOOTER**/
 footer {
 text-align: center;
