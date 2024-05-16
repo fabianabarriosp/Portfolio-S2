@@ -55,9 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//FIGMA POPUP BUTTON
+//RE-BRANDING FIGMA POPUP BUTTON
   function openFigma() {
     var figmaUrl = 'https://www.figma.com/file/7tIkzUMv8cd3fhybrX4H2Z/nathalie?type=design&node-id=0-1&mode=design&t=6Wpw6TDyQJXyxE0j-0';
+  
+    // Open the Figma URL in a new tab
+    window.open(figmaUrl, "_blank");
+  }
+
+//PORTFOLIO FIGMA POPUP BUTTON
+function openFigma2() {
+    var figmaUrl = 'https://www.figma.com/design/EM8N5AAlutdnZpN8nnbxMD/portfolio?node-id=561-82&t=4IFrpEG1W5ukebz9-0';
   
     // Open the Figma URL in a new tab
     window.open(figmaUrl, "_blank");

@@ -626,6 +626,20 @@ body, html {
   width:90%;
 }
 
+.LO1reflection{
+  position: absolute;
+  font-family: "Lora", serif;
+  font-weight: 200;
+  font-size: 13px;
+  right: 50px;
+  width:90%;
+  color: #efe7e4;
+  margin-top:300px;
+  cursor:default;
+  line-height: 20px;
+  text-align: justify;
+}
+
 .Stylescape{
   position: absolute;
   width:870px;
@@ -647,7 +661,7 @@ body, html {
   width: 1120px;
   border-radius: 50%;
   position: absolute;
-  top: 355px;
+  top: 390px;
   left: -100px;
 }
 
@@ -657,7 +671,7 @@ body, html {
   width: 1050px;
   border-radius: 50%;
   position: absolute;
-  top: 390px;
+  top: 415px;
   left: -65px;
 }
 
@@ -667,7 +681,7 @@ body, html {
   width: 980px;
   border-radius: 50%;
   position: absolute;
-  top: 425px;
+  top: 445px;
   left: -30px;
 }
 
@@ -678,7 +692,7 @@ body, html {
   color: #6C5E57;
   letter-spacing: 13px;
   position: absolute;
-  margin-top: 50%;
+  margin-top: 500px;
   left: 295px;
 }
 
@@ -689,7 +703,7 @@ body, html {
   margin-left: 130px;
   width:20%;
   color: #6C5E57;
-  margin-top:600px;
+  margin-top:615px;
   cursor:default;
   line-height: 20px;
   text-align: justify;
@@ -889,7 +903,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:160px;
   cursor: pointer;
-  margin-top: 1635px;
+  margin-top: 2395px;
   margin-left: 270px;
   position: absolute;
   z-index: 28381738178;
@@ -911,11 +925,32 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:180px;
   cursor: pointer;
-  margin-top: 2480px;
+  margin-top: 3230px;
   position: absolute;
 }
 
 .figmaBUTTON:hover{
+  background-color: #a8948b;
+ }
+
+ .portfoliofigmaBUTTON{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  margin-top: 1260px;
+  margin-left: 595px;
+  position: absolute;
+}
+
+.portfoliofigmaBUTTON:hover{
   background-color: #a8948b;
  }
 
@@ -932,7 +967,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 3530px;
+  margin-top: 4288px;
   margin-left: -420px;
   position: absolute;
 }
@@ -954,7 +989,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 3600px;
+  margin-top: 4360px;
   margin-left: -420px;
   position: absolute;
 }
@@ -991,7 +1026,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 430px;
+  margin-top: 390px;
   margin-left: -440px;
   position: absolute;
 }
@@ -1000,7 +1035,29 @@ letter-spacing: 1px;
   background-color: #a8948b;
  }
 
- .CANVABUTTON{
+ .CANVABUTTON1{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:180px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 460px;
+  margin-left: -440px;
+  position: absolute;
+}
+
+.CANVABUTTON1:hover{
+  background-color: #a8948b;
+ }
+
+ .CANVABUTTON2{
   font-family: "Londrina Solid", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1018,7 +1075,7 @@ letter-spacing: 1px;
   position: absolute;
 }
 
-.CANVABUTTON:hover{
+.CANVABUTTON2:hover{
   background-color: #a8948b;
  }
 
