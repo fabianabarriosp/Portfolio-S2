@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 //LEARNING OUTCOMES POPUPS
 document.addEventListener('DOMContentLoaded', () => {
     const projectButtons = document.querySelectorAll('.project-button');
@@ -140,3 +141,34 @@ window.addEventListener("scroll", function(e) {
   }
   
 });
+
+//LEARNING OUTCOMES CARDS ANIMATION
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+  
+    const revealCardsInOrder = () => {
+      let index = 0;
+      const interval = setInterval(() => {
+        if (index < cards.length) {
+          cards[index].classList.add('show');
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 300); // Delay between each card reveal
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          revealCardsInOrder();
+        } else {
+          cards.forEach(card => card.classList.remove('show')); // Remove class to allow re-animation
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the container is visible
+    });
+  
+    observer.observe(document.querySelector('.cards-container'));
+  });
