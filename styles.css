@@ -196,26 +196,6 @@ body, html {
   }
 }
 
-/* For small mobile devices */
-@media (max-width: 480px) {
-  .name {
-    font-size: 20px;
-    margin-top: -60px;
-    margin-left: 20px;
-    letter-spacing: 3px;
-  }
-  
-  .PortfolioCover {
-    width: 10%;
-    margin-top: -150px;
-  }
-  
-  #home {
-    padding-top: 150px;
-    padding-bottom: 150px;
-  }
-}
-
 /*ABOUT ME SECTION*/
 #about{
   padding-top: 360px;
@@ -322,26 +302,6 @@ body, html {
   margin-top: -15px;
 }
 
-/* Responsive adjustments LO */
-@media (max-width: 480px) {
-  .section {
-    padding: 20px;
-  }
-
-  .card {
-    width: 90%;
-    height:20%;
-    margin: 10px 0;
-  }
-
-  .popup {
-    width: 90%;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 /*each card */
 .card:nth-child(1) {
   background-color: #685a52;
@@ -415,16 +375,17 @@ body, html {
   top: -5px;
   margin-left: 865px;
   cursor: pointer;
-  color:#D2C9C5;
+  color:#E5AD6C;
   font-size: 39px;
   transition: 0.2s, top 0.2s;
   background-color: transparent;
   border: none;
   outline: none; 
+  z-index: 3287387283;
 }
 
 .close-btn:hover {
-  color: #E5AD6C;
+  color: #D2C9C5;
 }
 
 /*POPUP 1*/
@@ -1241,43 +1202,135 @@ font-family: "Nokora", sans-serif;
 font-weight: bold;
 }
 
-/* Media Queries */
+/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   .menu-toggle {
-      display: block;
+    display: block;
   }
-  
+
   .nav-menu {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #6C5E57;
-      z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6C5E57;
+    z-index: 1000;
+    flex-direction: column;
   }
 
   .nav-menu.open {
-      display: flex;
+    display: flex;
   }
 
   .nav-menu ul {
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .nav-menu li {
-      padding: 15px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
   }
 
-  .section {
-      padding: 30px;
+  .name {
+    font-size: 40px;
+    margin-top: -240px;
+    margin-left: 80px;
+    letter-spacing: 3px;
   }
-
+  
+  .PortfolioCover {
+    width: 30%;
+    margin-top: -15px;
+    margin-left: -140px;
+  }
+  .Scroll{
+    font-size: 12px;
+    margin-top: -130px;
+    margin-left: 85px;
+  }
+  
   .card {
-      width: 100%;
+    width: 70%;
+    margin: 10px 0;
+    height: auto;
   }
 
   .popup {
-      width: 90%;
+    width: 90%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .aboutmecontainer {
+    top:-120px;
+    margin-left: 2%;
+    width:100%;
+  }
+
+  .About {
+    width:80%;
+    left: 175px;
+    top: 170px;
+    position: relative;
+  }
+
+  .AMdogs{
+    width:30%;
+    top: 155px;
+    left:-250px;
+  }
+  .AMfriends{
+    width:30%;
+    top: 30%;
+    left:-190px;
+  }
+  .Me{
+    width:45%;
+    top: 495%;
+    left:-340px;
+  }
+  .AMcircle1{
+    width:40%;
+    top: -135%;
+    left:60px;
+  }
+
+  .AMcircle2{
+    width:53%;
+    top: -195%;
+    left:-140px;
+  }
+
+  .AMcircle3 {
+    width:35%;
+    top: -390%;
+    left:-320px;
+  }
+
+  .AM2pic{
+    width:40%;
+    top: 5%;
+    left:130px;
+  }
+#learning{
+  margin-top:-370px;
+}
+  .contact-section h2 {
+    font-size: 30px;
+    margin-top: -40px;
+    left: -300px;
+    white-space: nowrap;
+  }
+
+  #star-svg {
+    bottom: 10px;
+    width: 60px;
+    height: 75px;
   }
 }
