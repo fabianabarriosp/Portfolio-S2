@@ -55,6 +55,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//LO 1 IMAGE SLIDESHOW
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slider img');
+const totalSlides = slides.length;
+const slider = document.querySelector('.slider');
+
+function showSlide(index) {
+    if (index >= totalSlides) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = totalSlides - 1;
+    }
+    slider.style.transform = `translateX(${-slideIndex * 100}%)`;
+}
+
+function nextSlide() {
+    slideIndex++;
+    showSlide(slideIndex);
+}
+
+function prevSlide() {
+    slideIndex--;
+    showSlide(slideIndex);
+}
+
+// Initial display
+showSlide(slideIndex);
+
 //RE-BRANDING FIGMA POPUP BUTTON
   function openFigma() {
     var figmaUrl = 'https://www.figma.com/file/7tIkzUMv8cd3fhybrX4H2Z/nathalie?type=design&node-id=0-1&mode=design&t=6Wpw6TDyQJXyxE0j-0';
