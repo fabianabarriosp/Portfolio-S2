@@ -112,7 +112,7 @@ body, html {
   flex-direction:column;
   transition: transform 0.6s ease-in-out;
   text-align: center;
-  z-index: 10000;
+  z-index: 109432893828000;
 }
 
 .navbar .menu-items li {
@@ -160,6 +160,12 @@ body, html {
   z-index: 0;
   letter-spacing: 6px;
   cursor:default;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+.name:hover {
+  font-size: 100px;
+  color: #E5B07F;
 }
 
 .PortfolioCover {
@@ -169,7 +175,13 @@ body, html {
   margin-left:-390px;
   margin-top:50px;
   transform: translateX(-50%);
+  transition: transform 0.3s;
 }
+
+.PortfolioCover:hover {
+  transform: translateX(-50%) rotate(20deg);
+}
+
 .Scroll {
   position: absolute;
   cursor:default;
@@ -183,7 +195,12 @@ body, html {
   animation: bounceAnimation 2.5s ease-in-out infinite; /* Bounce for 1 second infinitely */
 }
 
-/**scroll text bouncing animation**/
+/* Keyframes for Animations HOME page*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @keyframes bounceAnimation {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); /* Bounce at the starting position, peak, and ending position */
@@ -343,6 +360,7 @@ body, html {
   opacity: 0;
   transition: transform 0.8s ease, opacity 0.8s ease;
 }
+
 /* Flip and Fade-in Animation */
 @keyframes flipFadeIn {
   0% {
@@ -363,6 +381,7 @@ body, html {
   font-size: 90px;
   font-weight: 200;
   margin-top: -15px;
+  cursor: default;
 }
 
 /*each card */
@@ -370,21 +389,45 @@ body, html {
   background-color: #685a52;
   color: #92847B;
 }
+.card:nth-child(1):hover {
+  background-color: #E5AD6C; 
+  color:#F1D1AD;
+}
+
 .card:nth-child(2) {
   background-color: #79685f;
   color:#A7988F;
 }
+.card:nth-child(2):hover {
+  background-color: #F0BE84; 
+  color:#F5DABC;
+}
+
 .card:nth-child(3) {
   background-color: #90786d;
   color: #B1A299;
 }
+.card:nth-child(3):hover {
+  background-color: #F5CC9B; 
+  color:#FFE9D1;
+}
+
 .card:nth-child(4) {
   background-color: #a68d82;
   color: #89766B;
 }
+.card:nth-child(4):hover {
+  background-color: #F1D1AD; 
+  color:#EEBA7F;
+}
+
 .card:nth-child(5) {
   background-color: #b2a098;
   color: #8F7F76;
+}
+.card:nth-child(5):hover {
+  background-color: #F5DABC; 
+  color:#daa05c;
 }
 
 .card h3{
@@ -415,6 +458,12 @@ body, html {
   color: #e9e3e0;
   font-weight: bolder;
 }
+/* Common hover styles for h3 and .project-button */
+.card:hover h3,
+.card:hover .project-button {
+  color: #B36307;
+  border-color: #B36307;
+}
 
 .popup {
   display: none;
@@ -434,9 +483,9 @@ body, html {
 
 .close-btn {
   font-family: "Luckiest Guy", cursive;
-  position: sticky;
-  top: -5px;
-  margin-left: 865px;
+  position: fixed;
+  top: 10px;
+  margin-left: 870px;
   cursor: pointer;
   color:#E5AD6C;
   font-size: 39px;
@@ -995,7 +1044,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:160px;
   cursor: pointer;
-  margin-top: 2420px;
+  margin-top: 2460px;
   margin-left: 730px;
   position: absolute;
   z-index: 28381738178;
@@ -1017,7 +1066,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:180px;
   cursor: pointer;
-  margin-top: 3265px;
+  margin-top: 3310px;
   position: absolute;
 }
 
@@ -1037,7 +1086,7 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   width:180px;
   cursor: pointer;
-  margin-top: 1310px;
+  margin-top: 1360px;
   margin-left: 595px;
   position: absolute;
 }
@@ -1059,7 +1108,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 4305px;
+  margin-top: 4355px;
   margin-left: 25px;
   position: absolute;
 }
@@ -1081,7 +1130,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 4370px;
+  margin-top: 4420px;
   margin-left: 25px;
   position: absolute;
 }
@@ -1092,7 +1141,7 @@ letter-spacing: 1px;
 
  .LO3{
   width: 940px;
-  margin-top: -10px;
+  margin-top: 40px;
   margin-left: -40px;
   margin-bottom: 420px;
   background-color: #6C5E57;
@@ -1117,7 +1166,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 520px;
+  margin-top: 570px;
   margin-left: 10px;
   position: absolute;
 }
@@ -1139,7 +1188,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 420px;
+  margin-top: 470px;
   margin-left: 10px;
   position: absolute;
 }
@@ -1161,7 +1210,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 1180px;
+  margin-top: 1220px;
   margin-left: 630px;
   position: absolute;
 }
@@ -1183,7 +1232,7 @@ letter-spacing: 1px;
   width:180px;
   cursor: pointer;
   z-index: 32873887827;
-  margin-top: 1270px;
+  margin-top: 1310px;
   margin-left: 630px;
   position: absolute;
 }
@@ -1193,9 +1242,8 @@ letter-spacing: 1px;
  }
 
 .LO4{
-  position: relative;
   width: 940px;
-  margin-top: -10px;
+  margin-top: 40px;
   margin-left: -40px;
   margin-bottom: 400px;
   background-color: #6C5E57;
@@ -1208,7 +1256,7 @@ letter-spacing: 1px;
 
 .trello{
   position: absolute;
-  margin-top:50px;
+  margin-top:100px;
   margin-left:390px;
   width: 450px;
   z-index: 2837374477;
@@ -1219,7 +1267,7 @@ letter-spacing: 1px;
   width: 60%; 
   height: auto;
   border-radius: 10px;
-  margin-top: 860px; 
+  margin-top: 910px; 
   left: 40px;
   z-index: 737282929383;
   position: absolute;
@@ -1245,29 +1293,90 @@ background-color: #6C5E57;
 padding: 10px;
 }
 
-.contact-section h2{
-color: #d7c7c0;
-font-size: 37px;
-letter-spacing: 6px;
-margin-top: 10px;
-margin-left: 30px;
-cursor: default;
-font-family: "Luckiest Guy", cursive;
+.wave span {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2.5s infinite;
+  color: #d7c7c0;
+  font-size: 35px;
+  letter-spacing: 6px;
+  cursor: default;
+  font-family: "Luckiest Guy", cursive;
+  z-index: -9238439843827;
 }
 
-.contact-section a[href^="mailto"] {
-color: #d7c7c0;
-margin-top: 20px;
-margin-left: 15px;
-font-family: "Nokora", sans-serif;
-font-weight: bold;
+.wave span:hover {
+  color: #E5AD6C;
+}
+.wave span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+.wave span:nth-child(11) {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /*phone number link */
 .contact-section a[href^="tel"] {
+  color: #d7c7c0;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Nokora", sans-serif;
+  font-weight: bold;
+  }
+  
+/*email*/
+.contact-section a[href^="mailto"] {
 color: #d7c7c0;
-margin-top: 10px;
-margin-left: 20px;
+margin-top: 20px;
+margin-left: 15px;
 font-family: "Nokora", sans-serif;
 font-weight: bold;
 }
@@ -1305,7 +1414,7 @@ font-weight: bold;
     width: 100%;
     text-align: center;
   }
-
+/*HOME SECTION*/
   .name {
     font-size: 40px;
     margin-top: -240px;
@@ -1323,20 +1432,8 @@ font-weight: bold;
     margin-top: -130px;
     margin-left: 85px;
   }
-  
-  .card {
-    width: 70%;
-    margin: 10px 0;
-    height: auto;
-  }
 
-  .popup {
-    width: 90%;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
+/*ABOUT ME SECTION*/
   .aboutmecontainer {
     top:-120px;
     margin-left: 2%;
@@ -1388,20 +1485,140 @@ font-weight: bold;
     top: 5%;
     left:130px;
   }
+
+/*LEARNING OUTCOMES SECTION*/
 #learning{
   margin-top:-370px;
 }
-  .contact-section h2 {
-    font-size: 30px;
-    margin-top: -40px;
-    left: -300px;
-    white-space: nowrap;
-  }
 
-  #star-svg {
-    bottom: 10px;
-    width: 60px;
-    height: 75px;
-  }
+.card {
+  width: 70%;
+  margin: 10px 0;
+  height: auto;
 }
 
+.popup {
+  width: 90%;
+  max-width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-btn {
+  top: 70px;
+  position: sticky;
+  margin-left: 380px;
+  font-size: 29px;
+}
+
+/*POPUP 3*/
+.LO3 {
+  width: 110%;  
+  margin-top:0%;
+}
+.portfoliofigmaBUTTON{
+  top:-735px;
+  padding:3px;
+  margin-left: 215px;
+  font-size: 8px;
+}
+
+.zipBUTTON2{
+  margin-top:1150px;
+  padding: 3px 10px;
+  margin-left: 280px;
+  font-size: 8px;
+}
+.figmaBUTTON{
+  top:620px;
+  padding: 3px;
+  margin-left: 160px;
+  font-size: 8px;
+}
+.documentationBUTTON2{
+  top:-620px;
+  padding: 3px;
+  margin-left: 160px;
+  font-size: 8px;
+}
+.documentationBUTTON3 {
+  top:-620px;
+  padding: 3px;
+  margin-left: 160px;
+  font-size: 8px;
+}
+
+/*POPUP 4*/
+.ContentStrategyBUTTON{
+  font-size: 10px;
+  margin-top: 600px;
+  padding:3px;
+  margin-left: 235px;
+}
+
+ .CANVABUTTON1{
+  font-size: 10px;
+  margin-top: 250px;
+  padding:3px;
+  margin-left: -90px;
+  padding-left: 70px;
+}
+
+ .CANVABUTTON2{
+  font-size: 10px;
+  margin-top: 570px;
+  padding:3px;
+  margin-left: 235px;
+}
+
+ .UserResearchBUTTON{
+  font-size: 10px;
+  margin-top: 210px;
+  padding:3px;
+  margin-left: -90px;
+  padding-left: 70px;
+}
+.LO4{
+  margin-top: 0%;
+  width: 110%;
+}
+
+.trello{
+  margin-top:55px;
+  margin-left:185px;
+  width: 180px;
+}
+
+.video2 {
+  width:65%;
+  margin-top:415px;
+  margin-left: -35px;
+}
+
+/*FOOTER*/
+.wave span {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.contact-section h2 {
+  font-size: 10px;
+  margin-top: -30px;
+  left: -300px;
+  white-space: nowrap;
+}
+
+.contact-section a[href^="tel"] {
+font-size: 15px;
+  }
+  
+.contact-section a[href^="mailto"] {
+font-size: 15px;
+}
+
+#star-svg {
+  bottom: 10px;
+  width: 70px;
+  height: 85px;
+}
+}
