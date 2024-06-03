@@ -484,7 +484,7 @@ body, html {
 .close-btn {
   font-family: "Luckiest Guy", cursive;
   position: fixed;
-  top: 10px;
+  top: -65px;
   margin-left: 870px;
   cursor: pointer;
   color:#E5AD6C;
@@ -517,7 +517,7 @@ body, html {
   font-family: "Luckiest Guy", cursive;
   font-weight: bold;
   font-size: 37px;
-  margin-top: -45px;
+  margin-top: 25px;
   color: #D2C9C5;
   text-align: center;
   letter-spacing: 3px;
@@ -546,7 +546,7 @@ body, html {
   color: #efe7e4;
   cursor:default;
   margin-left:60px;
-  margin-top:-395px;
+  margin-top:-420px;
   width:30%;
 }
 
@@ -935,10 +935,10 @@ body, html {
   letter-spacing: 1px;
 }
 
-/**LEARNING OUTCOME 2 popup contents**/
+/**POPUP 2**/
 .PortfolioTitle{
   margin-left:540px;
-  margin-top:-30px;
+  margin-top:30px;
   font-family: "Luckiest Guy", cursive;
   font-weight: bold;
   font-size: 38px;
