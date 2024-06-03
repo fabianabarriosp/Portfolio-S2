@@ -1024,7 +1024,7 @@ letter-spacing: 1px;
   background-color: #a8948b;
  }
 
-/**LEARNING OUTCOME 3 popup contents**/
+/**POPUP 3**/
 .button-container2{
   display: flex;
   flex-direction: column;
@@ -1152,7 +1152,7 @@ letter-spacing: 1px;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/**LEARNING OUTCOME 4 popup contents**/
+/**POPUP 4**/
 .ContentStrategyBUTTON{
   font-family: "Londrina Solid", sans-serif;
   font-weight: 500;
@@ -1273,7 +1273,20 @@ letter-spacing: 1px;
   position: absolute;
 }
 
-/**LEARNING OUTCOME 5 popup contents**/
+/**POPUP 5**/
+.LO5{
+  width: 940px;
+  margin-top: 40px;
+  margin-left: -40px;
+  margin-bottom: 400px;
+  background-color: #6C5E57;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: -1083784730;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 /**flower on scroll**/
 #star-svg {
   position: fixed;
