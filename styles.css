@@ -915,7 +915,6 @@ body, html {
   top:140px;
 }
 
-
 .OctoCookedText3{
   font-family: "Londrina Solid", sans-serif;
   font-weight: 500;
@@ -934,6 +933,12 @@ body, html {
   padding:10px;
   letter-spacing: 1px;
 }
+/**tools**/
+.toolsLO1{
+  width: 50px;
+  height: 50px;
+}
+
 
 /**POPUP 2**/
 .PortfolioTitle{
@@ -1024,6 +1029,86 @@ letter-spacing: 1px;
   background-color: #a8948b;
  }
 
+ .lo2{
+  width: 105%;
+  margin-top: -340px;
+  margin-left: -25px;
+  margin-bottom: -60px;
+ }
+.buttoncontainerLO2{
+  margin-top: -80px;
+  margin-left: 350px;
+}
+ .git-buttonBREDA{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px;
+  letter-spacing: 1px;
+  width:130px;
+  cursor: pointer;
+  margin-top: -1120px;
+  margin-left: 360px;
+  position: absolute;
+  z-index: 28381738178;
+  text-decoration: none;
+  text-align: center;
+ }
+ .git-buttonBREDA:hover{
+  background-color: #a8948b;
+ }
+
+.figma-buttonLO2{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px;
+  letter-spacing: 1px;
+  width:130px;
+  cursor: pointer;
+  margin-top: -1060px;
+  margin-left: 360px;
+  position: absolute;
+  z-index: 28381738178;
+  text-decoration: none;
+  text-align: center;
+}
+
+.figma-buttonLO2:hover{
+  background-color: #a8948b;
+ }
+
+ .pdf-buttonBREDA{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px;
+  letter-spacing: 1px;
+  width:130px;
+  cursor: pointer;
+  margin-top: -1000px;
+  margin-left: 360px;
+  position: absolute;
+  z-index: 28381738178;
+  text-decoration: none;
+  text-align: center;
+ }
+
+ .pdf-buttonBREDA:hover{
+  background-color: #a8948b;
+ }
 /**POPUP 3**/
 .button-container2{
   display: flex;
@@ -1143,7 +1228,7 @@ letter-spacing: 1px;
   width: 940px;
   margin-top: 40px;
   margin-left: -40px;
-  margin-bottom: 420px;
+  margin-bottom: 330px;
   background-color: #6C5E57;
   padding: 20px;
   border-radius: 8px;
@@ -1245,7 +1330,7 @@ letter-spacing: 1px;
   width: 940px;
   margin-top: 40px;
   margin-left: -40px;
-  margin-bottom: 400px;
+  margin-bottom: 330px;
   background-color: #6C5E57;
   padding: 20px;
   border-radius: 8px;
@@ -1263,6 +1348,14 @@ letter-spacing: 1px;
   border-radius: 20px;
 }
 
+.survey{
+  position: absolute;
+  margin-top:2030px;
+  margin-left:30px;
+  width: 400px;
+  z-index: 2837374477;
+  border-radius: 20px;
+}
 .video2 {
   width: 60%; 
   height: auto;
@@ -1272,6 +1365,71 @@ letter-spacing: 1px;
   z-index: 737282929383;
   position: absolute;
 }
+.videooG{
+  width: 50%; 
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1700px; 
+  left: 40px;
+  z-index: 737282929383;
+  position: absolute;
+}
+
+.videonew{
+  width: 50%; 
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1700px; 
+  left: 490px;
+  z-index: 737282929383;
+  position: absolute;
+}
+.git-buttonPROJECTX{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:120px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 32873883231217827;
+  margin-top: 1580px;
+  margin-left: 100px;
+  position: absolute;
+  text-decoration: none;
+}
+.git-buttonPROJECTX:hover{
+  background-color: #a8948b;
+}
+
+.pdf-buttonPROJECTX{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:120px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 1580px;
+  margin-left: 660px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+}
+.pdf-buttonPROJECTX:hover{
+  background-color: #a8948b;
+}
+
 
 /**POPUP 5**/
 .LO5{
@@ -1299,14 +1457,14 @@ letter-spacing: 1px;
   z-index: 84278787;
 }
 /**FOOTER**/
-footer {
+footer .contact-section {
 text-align: center;
 line-height: 28px;
 background-color: #6C5E57;
 padding: 10px;
 }
 
-.wave span {
+.contact-section .wave span {
   display: inline-block;
   transform-origin: 70% 70%;
   animation: wave 2.5s infinite;
@@ -1315,7 +1473,7 @@ padding: 10px;
   letter-spacing: 6px;
   cursor: default;
   font-family: "Luckiest Guy", cursive;
-  z-index: -9238439843827;
+  position: relative;
 }
 
 .wave span:hover {
