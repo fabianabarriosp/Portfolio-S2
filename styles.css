@@ -483,7 +483,7 @@ body, html {
 
 .close-btn {
   font-family: "Luckiest Guy", cursive;
-  position: fixed;
+  position:fixed;
   top: -65px;
   margin-left: 870px;
   cursor: pointer;
@@ -493,7 +493,7 @@ body, html {
   background-color: transparent;
   border: none;
   outline: none; 
-  z-index: 3283728382887387283;
+  z-index: 3283728382942882887387283;
 }
 
 .close-btn:hover {
@@ -935,8 +935,8 @@ body, html {
 }
 /**tools**/
 .toolsLO1{
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  margin-top: -270px;
 }
 
 
@@ -1028,6 +1028,14 @@ letter-spacing: 1px;
 .zipBUTTON:hover{
   background-color: #a8948b;
  }
+.code{
+  width: 430px;
+  margin-left: 20px;
+  margin-top: 850px;
+  z-index: 237827382;
+  position: absolute;
+  border-radius: 20px;
+}
 
  .lo2{
   width: 105%;
@@ -1334,7 +1342,7 @@ letter-spacing: 1px;
   background-color: #6C5E57;
   padding: 20px;
   border-radius: 8px;
-  z-index: -1083784730;
+  z-index: 1083784730;
   overflow-y: auto; /* Enable vertical scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -1432,11 +1440,57 @@ letter-spacing: 1px;
 
 
 /**POPUP 5**/
+.pfp-button{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:190px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 510px;
+  margin-left: 570px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+}
+.pfp-button:hover{
+  background-color: #a8948b;
+}
+
+.gfp-button{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color:#FFFFFF;
+  background-color: #E5AD6C;
+  border-color: transparent;
+  border-radius: 13px;
+  padding:8px 23px;
+  letter-spacing: 1px;
+  width:140px;
+  cursor: pointer;
+  z-index: 32873887827;
+  margin-top: 900px;
+  margin-left: 650px;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+}
+.gfp-button:hover{
+  background-color: #a8948b;
+}
+
 .LO5{
   width: 940px;
   margin-top: 40px;
   margin-left: -40px;
-  margin-bottom: 400px;
+  margin-bottom: 235px;
   background-color: #6C5E57;
   padding: 20px;
   border-radius: 8px;
@@ -1473,7 +1527,8 @@ padding: 10px;
   letter-spacing: 6px;
   cursor: default;
   font-family: "Luckiest Guy", cursive;
-  position: relative;
+  position:relative;
+  z-index: 0;
 }
 
 .wave span:hover {
@@ -1553,7 +1608,6 @@ font-weight: bold;
 }
 
 /* Media queries for responsiveness */
-
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
